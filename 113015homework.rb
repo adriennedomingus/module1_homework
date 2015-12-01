@@ -58,13 +58,9 @@ puts (e.length + f.length + g.length + h.length)/4
 
 age = 3
 age_times = age - 1
+say_happy = "Happy "
 
-puts "Happy"
-age_times.times do
-  puts "happy"
-end
-puts "birthday!"
-#puts "birthday!"
+puts say_happy + (say_happy.downcase * age_times) + "birthday!"
 
 #String Compression
 
