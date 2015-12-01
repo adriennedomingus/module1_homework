@@ -54,7 +54,7 @@ h = "Grace"
 puts e.length + f.length + g.length + h.length
 puts (e.length + f.length + g.length + h.length)/4
 
-#Happy Birthday
+#HappyBirthday
 
 age = 3
 age_times = age - 1
