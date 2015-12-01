@@ -26,11 +26,15 @@ name_2 = "Todd Park"
 
 # 1. Can you come up with two ways to output just the fragment "Megan" from name _1?
 puts name_1[0..4]
-puts name_1[0..-6]
+puts name_1[0..-7]
+puts name_1.split[0]
+
 # 2. Would either of your techniques from A work to output "Todd" from name_2? Why or why not?
-  #No - their names have different numbers of characters, so the substrings would cut at different points.
+  #Yes, with split method
 # 3. Write code that can out put the initials of name_2
 puts name_2[0] + name_2[5]
+puts name_2.split.first[0] + name_2.split.last[0]
+puts name_2.delete("a-z ")
 
 a = 12
 b = 65
@@ -40,7 +44,7 @@ d = 98
 #Write code to find the average of these four numbers
 puts (a + b + c + d)/4
 #Find the average yourself... is your answer different?
-  #Yes, because Ruby automatically used them as floats (rounded), vs. fixnum, which includes decimals.
+  #Yes, because Ruby automatically used them as floats (rounded), vs. integers, which includes decimals.
 puts a+b*c/d
 puts (a+b)*(c/d)
   #Ruby automatically uses order of operations
@@ -51,8 +55,8 @@ g = "Yukihiro"
 h = "Grace"
 
 #Write code to output both the total characters in all the names together and the average length of the names.
-puts e.length + f.length + g.length + h.length
-puts (e.length + f.length + g.length + h.length)/4
+puts (e + f + g + h).length
+puts (e + f + g + h).length/4
 
 #HappyBirthday
 
@@ -61,6 +65,7 @@ age_times = age - 1
 say_happy = "Happy "
 
 puts say_happy + (say_happy.downcase * age_times) + "birthday!"
+puts "Happy #{"happy " * (age - 1)}birthday!"
 
 #String Compression
 
