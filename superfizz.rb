@@ -1,3 +1,5 @@
+#https://github.com/turingschool/challenges/blob/master/super_fizz.markdown
+
 for num in 0..1000
   if num % 3 == 0 && num % 5 == 0 && num % 7 == 0
     puts "SuperFizzBuzz"
