@@ -1,0 +1,6 @@
+testing hello test apple test apple test hello
+
+The three most commonly used words in this text are:
+test
+apple
+hello
