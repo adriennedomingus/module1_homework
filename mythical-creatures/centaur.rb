@@ -63,14 +63,15 @@ class Centaur
   end
 
   def drink_potion
-    @rested += 1
-    if @laying == true
-      "NO!"
+    if @laying == false
+      @rested += 1
+    else
+      @rested = 0
     end
   end
 
   def rested?
-    true if @rested > 0
+    @rested > 0 ? true : false
   end
 
   def sick?

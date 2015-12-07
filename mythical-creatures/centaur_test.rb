@@ -130,10 +130,10 @@ class CentaurTest < Minitest::Test
 
     centaur.drink_potion
     assert centaur.rested?
-
     centaur.lay_down
-    assert_equal "NO!", centaur.drink_potion
-    # your code here
+    centaur.drink_potion
+    refute centaur.rested?
+    #your code here
   end
 
   def test_gets_sick_if_drinks_potion_while_rested
