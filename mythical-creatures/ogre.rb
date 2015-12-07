@@ -43,11 +43,7 @@ class Human
   end
 
   def knocked_out?
-    if $hit == true
-      true
-    else
-      false
-    end
+    $hit == true ? true : false
   end
 
 end

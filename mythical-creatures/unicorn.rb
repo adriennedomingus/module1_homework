@@ -12,8 +12,7 @@ class Unicorn
   end
 
   def say(phrase)
-    phrase.insert(0, "**;* ")
-    phrase.insert(-1, " **;*")
+    "**;* #{phrase} **;*"
   end
 
 end
