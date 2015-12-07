@@ -9,19 +9,11 @@ class Wizard
   end
 
   def bearded?
-    if @bearded == true
-      true
-    else
-      false
-    end
+    @bearded == true ? true : false
   end
 
   def rested?
-    if @rested < 3
-      true
-    else
-      false
-    end
+    @rested < 3 ? true : false
   end
 
   def cast

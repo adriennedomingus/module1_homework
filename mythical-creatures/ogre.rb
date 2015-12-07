@@ -39,11 +39,7 @@ class Human
 
   def notices_ogre?
     @encounter_counter = 0
-    if @encounter_counter % 3 == 0
-      true
-    else
-      false
-    end
+    true if @encounter_counter % 3 == 0
   end
 
   def knocked_out?

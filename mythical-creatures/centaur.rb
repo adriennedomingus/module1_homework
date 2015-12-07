@@ -12,11 +12,7 @@ class Centaur
   end
 
   def cranky?
-    if @crank > 2
-      true
-    else
-      false
-    end
+    @crank > 2 ? true : false
   end
 
   def standing?

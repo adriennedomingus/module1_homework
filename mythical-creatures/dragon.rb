@@ -1,24 +1,20 @@
 class Dragon
 
-  attr_accessor :name, :rider, :color, :eaten
+  attr_accessor :name, :color, :eaten, :rider
 
-  def initialize(name = "Ramoth", color = :gold, rider, eaten = 0)
+  def initialize(name = "Ramoth", color = :gold, eaten = 0, rider)
     @name = name
     @color = color
-    @rider = rider
     @eaten = eaten
+    @rider = rider
   end
 
-  def eating
+  def eat
     @eaten += 1
   end
 
   def hungry?
-    if @eaten < 3
-      true
-    else
-      false
-    end
+    @eaten < 3 ? true : false
   end
 
 end

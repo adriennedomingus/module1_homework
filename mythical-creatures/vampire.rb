@@ -9,7 +9,7 @@ class Vampire
   end
 
   def thirsty?
-    thirsty = @thirsty
+    @thirsty
   end
 
   def drink

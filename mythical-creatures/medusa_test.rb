@@ -61,7 +61,6 @@ class MedusaTest < Minitest::Test
   end
 
   def test_if_a_fourth_victim_is_stoned_first_is_unstoned
-    skip
     medusa = Medusa.new("Cassiopeia")
     victim = Person.new("victim")
     victim2 = Person.new("victim2")
@@ -69,11 +68,8 @@ class MedusaTest < Minitest::Test
     victim4 = Person.new("victim4")
 
     medusa.stare(victim)
-    assert victim.stoned?
     medusa.stare(victim2)
-    assert victim2.stoned?
     medusa.stare(victim3)
-    assert victim3.stoned?
     medusa.stare(victim4)
     assert victim4.stoned
     refute victim.stoned?
