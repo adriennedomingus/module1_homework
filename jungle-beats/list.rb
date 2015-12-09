@@ -2,39 +2,32 @@ require_relative 'node'
 
 class List
 
-  attr_accessor :head, :nextnode, :data
+  attr_accessor :head, :next_node, :data
 
   def initialize(head = nil)
     @head = head
   end
 
   def append(data)
-    appending = data.split
-    appending.each do |beat|
       if @head == nil
-        node = Node.new(beat)
+        node = Node.new(data)
       else
         current_node = @head
-        loop do
+        until current_node.next_node == nil do
           current_node = current_node.next_node
-          break if current_node.next_node == nil
         end
-        current_node.next_node = Node.new(beat)
+        current_node.next_node = Node.new(data)
       end
-    end
   end
 
-  def prepend(data)
-    prepending = data.split
-    prepending.reverse.each do |beat|
-      if @head == nil
-        node = Node.new(beat)
-        @head = node
-      else
-        node = Node.new(beat)
-        node.next_node = @head
-        @head = node
-      end
+  def prepend(beat)
+    if @head == nil
+      node = Node.new(beat)
+      @head = node
+    else
+      node = Node.new(beat)
+      node.next_node = @head
+      @head = node
     end
   end
 
@@ -44,10 +37,9 @@ class List
     else
       all_nodes = [@head.data]
       current_node = @head
-      loop do
+      until current_node.next_node == nil do
         current_node = current_node.next_node
         all_nodes << current_node.data
-        break if current_node.next_node == nil
       end
       all_nodes.join(" ")
     end
@@ -89,6 +81,44 @@ class List
       current_node = current_node.next_node
       current_node.data == data ? true : false
     end
+  end
+
+  def insert(start_point, data)
+  current_node = @head
+  counter = 0
+  inserting = data.split.reverse
+    inserting.each do |beat|
+      if start_point == 0
+        placeholder = @head
+        @head = Node.new(data)
+        @head.next_node = placeholder
+      else
+        until counter == (start_point - 1)
+          current_node = current_node.next_node
+          counter += 1
+        end
+        placeholder = current_node.next_node
+        current_node.next_node = Node.new(beat, placeholder)
+      end
+    end
+  end
+
+  def find(start_point, number_of_elements)
+    current_node = @head
+    counter = 0
+    requested_nodes = []
+
+    (start_point-1).times do
+      current_node = current_node.next_node
+      counter += 1
+    end
+
+    number_of_elements.times do
+      current_node = current_node.next_node
+      requested_nodes << current_node.data
+    end
+
+    requested_nodes.join(" ")
   end
 
 end

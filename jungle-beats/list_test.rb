@@ -92,8 +92,23 @@ class ListTest < MiniTest::Test
     n1.next_node = n2
     n2.next_node = n3
     list = List.new(n1)
-    list.insert(2, "tee tee tee")
-    assert_equal "beep", list.all 
+    list.insert(1, "tee dee")
+    assert_equal "beep tee dee bop boop", list.all
+  end
+
+  def test_finds_requested_element
+    n1 = Node.new("beep")
+    n2 = Node.new("bop")
+    n3 = Node.new("boop")
+    n4 = Node.new("tee")
+    n5 = Node.new("deep")
+    @head = n1
+    n1.next_node = n2
+    n2.next_node = n3
+    n3.next_node = n4
+    n4.next_node = n5
+    list = List.new(n1)
+    assert_equal "bop boop", list.find(1, 2)
   end
 
 end
