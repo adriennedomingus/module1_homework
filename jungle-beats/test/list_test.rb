@@ -36,6 +36,12 @@ class ListTest < MiniTest::Test
     assert_equal 3, list.count
   end
 
+  def test_count_is_zero_when_list_is_empty
+    @head = nil
+    list = List.new()
+    assert_equal 0, list.count
+  end
+
   def test_pop_removes_last_element_in_list
     n1 = Node.new("beep")
     n2 = Node.new("bop")
@@ -48,6 +54,14 @@ class ListTest < MiniTest::Test
     list = List.new(n1)
     list.pop
     assert_equal "beep bop boop", list.all
+  end
+
+  def test_pop_removes_head_if_list_has_only_one_item
+    n1 = Node.new("beep")
+    @head = n1
+    list = List.new(n1)
+    list.pop
+    assert_equal 0, list.count
   end
 
   def test_prepend_adds_new_elements_to_beginning_of_list
@@ -70,7 +84,7 @@ class ListTest < MiniTest::Test
     n1.next_node = n2
     n2.next_node = n3
     list = List.new(n1)
-    assert_equal true, list.include?("bop")
+    assert_equal true, list.include?("boop")
   end
 
   def test_include_returns_false_when_beat_is_not_in_the_list

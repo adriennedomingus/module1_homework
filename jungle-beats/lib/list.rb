@@ -2,22 +2,23 @@ require_relative 'node'
 
 class List
 
-  attr_accessor :head, :next_node, :data
+  attr_accessor :head, :next_node, :data, :popped
 
   def initialize(head = nil)
     @head = head
+    @data = data
   end
 
   def append(data)
-      if @head == nil
-        node = Node.new(data)
-      else
-        current_node = @head
-        until current_node.next_node == nil do
-          current_node = current_node.next_node
-        end
-        current_node.next_node = Node.new(data)
+    if @head == nil
+      node = Node.new(data)
+    else
+      current_node = @head
+      until current_node.next_node == nil do
+        current_node = current_node.next_node
       end
+      current_node.next_node = Node.new(data)
+    end
   end
 
   def prepend(beat)
@@ -49,7 +50,7 @@ class List
     total = 1
     current_node = @head
     if @head == nil
-      total
+      total = 0
     else
       loop do
         total += 1
@@ -63,24 +64,26 @@ class List
   def pop
     current_node = @head
     if @head.next_node == nil
+      temp = @head.data
       @head = nil
+      return temp
     else
-      loop do
-        current_node.next_node = nil if current_node.next_node.next_node == nil
+      until current_node.next_node.next_node == nil do
         current_node = current_node.next_node
-        break if current_node == nil
       end
+      temp = current_node.next_node.data
+      current_node.next_node = nil
+      return temp
     end
   end
 
   def include?(data)
     current_node = @head
-    if current_node.data == data
-      true
-    else
+    until current_node == nil
+      return true if current_node.data == data
       current_node = current_node.next_node
-      current_node.data == data ? true : false
     end
+    false
   end
 
   def insert(start_point, data)

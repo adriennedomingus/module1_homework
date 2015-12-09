@@ -15,17 +15,21 @@ class JungleBeat
   end
 
   def append(beats)
+    initial_count = @list.count
     appending = beats.split
     appending.each do |beat|
       @list.append(beat)
     end
+    return @list.count - initial_count
   end
 
   def prepend(beats)
+    initial_count = @list.count
     prepending = beats.split
     prepending.reverse.each do |beat|
       @list.prepend(beat)
     end
+    return @list.count - initial_count
   end
 
   def all
@@ -37,13 +41,16 @@ class JungleBeat
   end
 
   def pop(pops)
+    popped = []
     pops.times do
-      @list.pop
+      popped << @list.pop
     end
+    return popped.reverse.join (" ")
   end
 
   def insert(start_point, data)
     @list.insert(start_point, data)
+    all
   end
 
   def find(start_point, number_of_elements)
@@ -55,7 +62,8 @@ class JungleBeat
   end
 
   def play
-    `say -r 100 -v Boing #{@beat}`
+    beats = all
+    `say -r 100 -v Boing #{all}`
+    count
   end
-  # count
 end

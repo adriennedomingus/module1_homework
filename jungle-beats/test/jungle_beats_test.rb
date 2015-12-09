@@ -11,6 +11,16 @@ class JungleBeatTest < MiniTest::Test
     assert_equal "deep tee deep bop bop deep", jb.all
   end
 
+  def test_append_returns_the_number_of_appended_beats
+    n1 = Node.new("beep")
+    n2 = Node.new("bop")
+    @head = n1
+    n1.next_node = n2
+    list = List.new(n1)
+    jb = JungleBeat.new("deep tee")
+    assert_equal 2, jb.append("deep dep")
+  end
+
   def test_all
     jb = JungleBeat.new("deep dep dep deep")
     assert_equal "deep dep dep deep", jb.all
@@ -20,6 +30,16 @@ class JungleBeatTest < MiniTest::Test
     jb = JungleBeat.new("deep dep dep deep")
     jb.prepend("deep bop bop deep")
     assert_equal "deep bop bop deep deep dep dep deep", jb.all
+  end
+
+  def test_prepend_returns_the_number_of_prepended_beats
+    n1 = Node.new("beep")
+    n2 = Node.new("bop")
+    @head = n1
+    n1.next_node = n2
+    list = List.new(n1)
+    jb = JungleBeat.new("deep tee")
+    assert_equal 2, jb.prepend("deep dep")
   end
 
   def test_it_includes_requested_elements
@@ -36,6 +56,11 @@ class JungleBeatTest < MiniTest::Test
     jb = JungleBeat.new("deep dep dep deep")
     jb.pop(1)
     assert_equal "deep dep dep", jb.all
+  end
+
+  def test_pop_returns_popped_beats
+    jb = JungleBeat.new("deep dep dep deep")
+    assert_equal "dep deep", jb.pop(2)
   end
 
   def test_it_can_remove_more_than_one_element
@@ -55,9 +80,19 @@ class JungleBeatTest < MiniTest::Test
     assert_equal "deep tee beep dep dep deep", jb.all
   end
 
+  def test_insert_returns_all_beats
+    jb = JungleBeat.new("deep dep dep deep")
+    assert_equal "deep bop beep dep dep deep", jb.insert(1, "bop beep")
+  end
+
   def test_it_finds_beats_at_requested_location
     jb = JungleBeat.new("deep dep beep bop")
     assert_equal "dep", jb.find(1, 1)
+  end
+
+  def test_play_returns_number_of_beats_played
+    jb = JungleBeat.new("deep dep dep deep")
+    assert_equal 4, jb.play
   end
 
 
