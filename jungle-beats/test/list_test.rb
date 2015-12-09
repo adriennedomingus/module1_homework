@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'list'
+require_relative '../lib/list'
 
 class ListTest < MiniTest::Test
 

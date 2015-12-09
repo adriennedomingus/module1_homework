@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative 'jungle_beats'
+require_relative '../lib/jungle_beats'
 
 
 class JungleBeatTest < MiniTest::Test
@@ -34,8 +34,14 @@ class JungleBeatTest < MiniTest::Test
 
   def test_pop_removes_last_element_in_list
     jb = JungleBeat.new("deep dep dep deep")
-    jb.pop
+    jb.pop(1)
     assert_equal "deep dep dep", jb.all
+  end
+
+  def test_it_can_remove_more_than_one_element
+    jb = JungleBeat.new("deep dep dep deep")
+    jb.pop(2)
+    assert_equal "deep dep", jb.all
   end
 
   def test_it_counts_all_beats

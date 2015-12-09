@@ -36,8 +36,10 @@ class JungleBeat
     @list.count
   end
 
-  def pop
-    @list.pop
+  def pop(pops)
+    pops.times do
+      @list.pop
+    end
   end
 
   def insert(start_point, data)
