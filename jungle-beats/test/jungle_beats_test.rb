@@ -89,7 +89,7 @@ class JungleBeatTest < MiniTest::Test
     jb = JungleBeat.new("deep dep dep deep")
     assert_equal "deep bop beep dep dep deep", jb.insert(1, "bop beep")
   end
-
+  
   def test_it_finds_beats_at_requested_location
     jb = JungleBeat.new("deep dep beep bop")
     assert_equal "dep", jb.find(1, 1)

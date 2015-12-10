@@ -23,10 +23,9 @@ class ListTest < MiniTest::Test
   end
 
   def test_it_appends_if_the_list_is_empty
-    skip
     list = List.new(nil)
     list.append("beep")
-    assert_equal "beep", @head.data
+    assert_equal "beep", list.all
   end
 
   def test_it_lists_all_data
@@ -83,7 +82,6 @@ class ListTest < MiniTest::Test
     n1 = Node.new("beep")
     n2 = Node.new("bop")
     n3 = Node.new("boop")
-    @head = n1
     n1.next_node = n2
     n2.next_node = n3
     list = List.new(n1)
@@ -95,7 +93,6 @@ class ListTest < MiniTest::Test
     n1 = Node.new("beep")
     n2 = Node.new("bop")
     n3 = Node.new("boop")
-    @head = n1
     n1.next_node = n2
     n2.next_node = n3
     list = List.new(n1)
@@ -106,7 +103,6 @@ class ListTest < MiniTest::Test
     n1 = Node.new("beep")
     n2 = Node.new("bop")
     n3 = Node.new("boop")
-    @head = n1
     n1.next_node = n2
     n2.next_node = n3
     list = List.new(n1)
@@ -117,7 +113,6 @@ class ListTest < MiniTest::Test
     n1 = Node.new("beep")
     n2 = Node.new("bop")
     n3 = Node.new("boop")
-    @head = n1
     n1.next_node = n2
     n2.next_node = n3
     list = List.new(n1)
@@ -131,7 +126,6 @@ class ListTest < MiniTest::Test
     n3 = Node.new("boop")
     n4 = Node.new("tee")
     n5 = Node.new("deep")
-    @head = n1
     n1.next_node = n2
     n2.next_node = n3
     n3.next_node = n4
@@ -144,7 +138,6 @@ class ListTest < MiniTest::Test
     n1 = Node.new("beep")
     n2 = Node.new("bop")
     n3 = Node.new("boop")
-    @head = n1
     n1.next_node = n2
     n2.next_node = n3
     list = List.new(n1)

@@ -2,34 +2,19 @@ require_relative 'node'
 
 class List
 
-  attr_accessor :head, :next_node, :data
+  attr_accessor :head
+  attr_reader :data, :next_node
 
   def initialize(head = nil)
     @head = head
   end
 
   def append(beat)
-    if @head == nil
-      n1 = Node.new(beat)
-      n1 = @head
-    else
-      current_node = @head
-      until current_node.next_node == nil do
-        current_node = current_node.next_node
-      end
-      current_node.next_node = Node.new(beat)
-    end
+    insert(count, beat)
   end
 
   def prepend(beat)
-    if @head == nil
-      node = Node.new(beat)
-      @head = node
-    else
-      node = Node.new(beat)
-      node.next_node = @head
-      @head = node
-    end
+    insert(0, beat)
   end
 
   def all
@@ -87,31 +72,30 @@ class List
   end
 
   def insert(start_point, data)
-  current_node = @head
-  @counter = 0
-    inserting = data.split.reverse
-    inserting.each do |beat|
-      if start_point == 0
-        placeholder = @head
-        @head = Node.new(data)
-        @head.next_node = placeholder
-      else
-        until @counter == (start_point - 1)
-          current_node = current_node.next_node
-          @counter += 1
-        end
-        placeholder = current_node.next_node
-        current_node.next_node = Node.new(beat, placeholder)
-      end
+    data.split.each_with_index do |beat, index|
+      insert_node(start_point + index, Node.new(beat))
     end
   end
 
+  def insert_node(start_point, node)
+    current_node = @head
+    if start_point == 0
+      node.next_node = current_node
+      @head = node
+    else
+      (start_point - 1).times do
+        current_node = current_node.next_node
+      end
+      placeholder = current_node.next_node
+      node.next_node = placeholder
+      current_node.next_node = node
+    end
+  end
 
   def find(start_point, number_of_elements)
     current_node = @head
     counter = 0
     requested_nodes = []
-
     if start_point > count
       return "Sorry, there are not that many beats in the list"
     else
@@ -124,7 +108,6 @@ class List
           requested_nodes << current_node.data
         end
     end
-
     requested_nodes.join(" ")
   end
 

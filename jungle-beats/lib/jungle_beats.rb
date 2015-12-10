@@ -2,35 +2,26 @@ require_relative 'list'
 
 class JungleBeat
 
-  attr_accessor :beat, :list
+  attr_accessor :list
+  attr_reader :beat
 
   def initialize(beat = nil)
     @beat = beat
     if @beat != nil
-      beats = @beat.split
-      @head = Node.new(beats[0])
-      @list = List.new(@head)
-      beats[1..-1].each do |beat|
-        list.append(beat)
-      end
+      @list = List.new
+      @list.append(@beat)
     end
   end
 
   def append(beats)
     initial_count = @list.count
-    appending = beats.split
-    appending.each do |beat|
-      @list.append(beat)
-    end
+    @list.append(beats)
     return @list.count - initial_count
   end
 
   def prepend(beats)
     initial_count = @list.count
-    prepending = beats.split
-    prepending.reverse.each do |beat|
-      @list.prepend(beat)
-    end
+    @list.prepend(beats)
     return @list.count - initial_count
   end
 
