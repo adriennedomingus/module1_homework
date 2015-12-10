@@ -88,46 +88,42 @@ class List
 
   def insert(start_point, data)
   current_node = @head
-  counter = 0
-  inserting = data.split.reverse
+  @counter = 0
+    inserting = data.split.reverse
     inserting.each do |beat|
       if start_point == 0
         placeholder = @head
         @head = Node.new(data)
         @head.next_node = placeholder
       else
-        # if start_point - 1  <= counter
-          until counter == (start_point - 1)
-            current_node = current_node.next_node
-            counter += 1
-          end
-          placeholder = current_node.next_node
-          current_node.next_node = Node.new(beat, placeholder)
-        # else
-        #   return "Sorry, you can't insert beats beyond the scope of the list."
-        # end
+        until @counter == (start_point - 1)
+          current_node = current_node.next_node
+          @counter += 1
+        end
+        placeholder = current_node.next_node
+        current_node.next_node = Node.new(beat, placeholder)
       end
     end
   end
+
 
   def find(start_point, number_of_elements)
     current_node = @head
     counter = 0
     requested_nodes = []
 
-    (start_point-1).times do
-      current_node = current_node.next_node
-      counter += 1
-    end
-    if start_point -1 <= counter
-      number_of_elements.times do
-        current_node = current_node.next_node
-        requested_nodes << current_node.data
-      end
-    else
+    if start_point > count
       return "Sorry, there are not that many beats in the list"
+    else
+      (start_point-1).times do
+        current_node = current_node.next_node
+        counter += 1
+      end
+        number_of_elements.times do
+          current_node = current_node.next_node
+          requested_nodes << current_node.data
+        end
     end
-
 
     requested_nodes.join(" ")
   end

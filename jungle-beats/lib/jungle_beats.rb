@@ -6,11 +6,13 @@ class JungleBeat
 
   def initialize(beat = nil)
     @beat = beat
-    beats = @beat.split
-    @head = Node.new(beats[0])
-    @list = List.new(@head)
-    beats[1..-1].each do |beat|
-      list.append(beat)
+    if @beat != nil
+      beats = @beat.split
+      @head = Node.new(beats[0])
+      @list = List.new(@head)
+      beats[1..-1].each do |beat|
+        list.append(beat)
+      end
     end
   end
 
@@ -49,7 +51,11 @@ class JungleBeat
   end
 
   def insert(start_point, data)
-    @list.insert(start_point, data)
+    if start_point > count
+      return "Sorry, you can't insert beats beyond the scope of the list."
+    else
+      @list.insert(start_point, data)
+    end
     all
   end
 
@@ -62,8 +68,8 @@ class JungleBeat
   end
 
   def play
-    beats = all
-    `say -r 100 -v Boing #{all}`
+    all
+    `say -r 500 -v Boing #{all}`
     count
   end
 end

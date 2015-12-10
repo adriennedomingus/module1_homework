@@ -81,7 +81,6 @@ class JungleBeatTest < MiniTest::Test
   end
 
   def test_it_returns_error_if_inserting_node_at_location_beyond_list
-    skip
     jb = JungleBeat.new("deep dep dep deep")
     assert_equal "Sorry, you can't insert beats beyond the scope of the list.", jb.insert(5, "tee")
   end
@@ -97,7 +96,6 @@ class JungleBeatTest < MiniTest::Test
   end
 
   def test_play_returns_number_of_beats_played
-    skip
     jb = JungleBeat.new("deep dep dep deep")
     assert_equal 4, jb.play
   end

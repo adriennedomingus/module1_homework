@@ -26,7 +26,7 @@ class ListTest < MiniTest::Test
     skip
     list = List.new(nil)
     list.append("beep")
-    assert_equal "beep", list.all
+    assert_equal "beep", @head.data
   end
 
   def test_it_lists_all_data
@@ -125,18 +125,6 @@ class ListTest < MiniTest::Test
     assert_equal "beep bop tee dee boop", list.all
   end
 
-  def test_it_returns_error_if_inserting_node_at_location_beyond_list
-    skip
-    n1 = Node.new("beep")
-    n2 = Node.new("bop")
-    n3 = Node.new("boop")
-    @head = n1
-    n1.next_node = n2
-    n2.next_node = n3
-    list = List.new(n1)
-    assert_equal "Sorry, you can't insert beats beyond the scope of the list.", list.insert(6, "deep")
-  end
-
   def test_finds_requested_element
     n1 = Node.new("beep")
     n2 = Node.new("bop")
@@ -153,7 +141,6 @@ class ListTest < MiniTest::Test
   end
 
   def test_returns_error_if_finding_beat_beyond_scope_of_list
-    skip
     n1 = Node.new("beep")
     n2 = Node.new("bop")
     n3 = Node.new("boop")
