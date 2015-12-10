@@ -4,6 +4,14 @@ require_relative '../lib/list'
 
 class ListTest < MiniTest::Test
 
+  def test_the_list_knows_its_head
+    n1 = Node.new("beep")
+    n2 = Node.new("bop")
+    n1.next_node = n2
+    list = List.new(n1)
+    assert_equal n1, list.head
+  end
+
   def test_it_appends_new_nodes_to_the_end_of_list
     n1 = Node.new("beep")
     n2 = Node.new("bop")
@@ -12,6 +20,13 @@ class ListTest < MiniTest::Test
     list = List.new(n1)
     list.append("deep dep")
     assert_equal "beep bop deep dep", list.all
+  end
+
+  def test_it_appends_if_the_list_is_empty
+    skip
+    list = List.new(nil)
+    list.append("beep")
+    assert_equal "beep", list.all
   end
 
   def test_it_lists_all_data
@@ -106,8 +121,20 @@ class ListTest < MiniTest::Test
     n1.next_node = n2
     n2.next_node = n3
     list = List.new(n1)
-    list.insert(1, "tee dee")
-    assert_equal "beep tee dee bop boop", list.all
+    list.insert(2, "tee dee")
+    assert_equal "beep bop tee dee boop", list.all
+  end
+
+  def test_it_returns_error_if_inserting_node_at_location_beyond_list
+    skip
+    n1 = Node.new("beep")
+    n2 = Node.new("bop")
+    n3 = Node.new("boop")
+    @head = n1
+    n1.next_node = n2
+    n2.next_node = n3
+    list = List.new(n1)
+    assert_equal "Sorry, you can't insert beats beyond the scope of the list.", list.insert(6, "deep")
   end
 
   def test_finds_requested_element
@@ -122,7 +149,19 @@ class ListTest < MiniTest::Test
     n3.next_node = n4
     n4.next_node = n5
     list = List.new(n1)
-    assert_equal "bop boop", list.find(1, 2)
+    assert_equal "tee deep", list.find(3, 2)
+  end
+
+  def test_returns_error_if_finding_beat_beyond_scope_of_list
+    skip
+    n1 = Node.new("beep")
+    n2 = Node.new("bop")
+    n3 = Node.new("boop")
+    @head = n1
+    n1.next_node = n2
+    n2.next_node = n3
+    list = List.new(n1)
+    assert_equal "Sorry, there are not that many beats in the list", list.find(4,1)
   end
 
 end

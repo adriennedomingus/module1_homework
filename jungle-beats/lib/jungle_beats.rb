@@ -4,7 +4,7 @@ class JungleBeat
 
   attr_accessor :beat, :list
 
-  def initialize(beat)
+  def initialize(beat = nil)
     @beat = beat
     beats = @beat.split
     @head = Node.new(beats[0])

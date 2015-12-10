@@ -2,22 +2,22 @@ require_relative 'node'
 
 class List
 
-  attr_accessor :head, :next_node, :data, :popped
+  attr_accessor :head, :next_node, :data
 
   def initialize(head = nil)
     @head = head
-    @data = data
   end
 
-  def append(data)
+  def append(beat)
     if @head == nil
-      node = Node.new(data)
+      n1 = Node.new(beat)
+      n1 = @head
     else
       current_node = @head
       until current_node.next_node == nil do
         current_node = current_node.next_node
       end
-      current_node.next_node = Node.new(data)
+      current_node.next_node = Node.new(beat)
     end
   end
 
@@ -96,12 +96,16 @@ class List
         @head = Node.new(data)
         @head.next_node = placeholder
       else
-        until counter == (start_point - 1)
-          current_node = current_node.next_node
-          counter += 1
-        end
-        placeholder = current_node.next_node
-        current_node.next_node = Node.new(beat, placeholder)
+        # if start_point - 1  <= counter
+          until counter == (start_point - 1)
+            current_node = current_node.next_node
+            counter += 1
+          end
+          placeholder = current_node.next_node
+          current_node.next_node = Node.new(beat, placeholder)
+        # else
+        #   return "Sorry, you can't insert beats beyond the scope of the list."
+        # end
       end
     end
   end
@@ -115,11 +119,15 @@ class List
       current_node = current_node.next_node
       counter += 1
     end
-
-    number_of_elements.times do
-      current_node = current_node.next_node
-      requested_nodes << current_node.data
+    if start_point -1 <= counter
+      number_of_elements.times do
+        current_node = current_node.next_node
+        requested_nodes << current_node.data
+      end
+    else
+      return "Sorry, there are not that many beats in the list"
     end
+
 
     requested_nodes.join(" ")
   end
