@@ -42,29 +42,49 @@ class EncryptTest < MiniTest::Test
     result = {"a"=>0,"b"=>1,"c"=>2,"d"=>3,"e"=>4,"f"=>5,"g"=>6, "h"=>7,"i"=>8,
               "j"=>9,"k"=>10, "l"=>11, "m"=>12, "n"=>13, "o"=>14, "p"=>15,"q"=>16,
               "r"=>17,"s"=>18,"t"=>19,"u"=>20,"v"=>21,"w"=>22,"x"=>23,"y"=>24,
-              "z"=>25,0=>26,1=>27,2=>28,3=>29,4=>30,5=>31,6=>32,7=>33,8=>34,9=>35,
+              "z"=>25,"0"=>26,"1"=>27,"2"=>28,"3"=>29,"4"=>30,"5"=>31,"6"=>32,"7"=>33,"8"=>34,"9"=>35,
               " "=>36, "."=>37,","=>38}
     assert_equal result, e.character_chart
     assert_equal Hash, result.class
   end
 
   def test_it_maps_a_single_letter_to_its_index
+    skip
     e = Encrypt.new(54321, Time.now)
+    60 % 39
     result = 12
     assert_equal result, e.map_letter("m")
   end
 
   def test_it_maps_a_word_to_all_indices
+    skip
     e = Encrypt.new(54321, Time.now)
     result = [12, 4, 18, 18, 0, 6, 4]
     assert_equal result, e.map_message("message")
   end
 
   def test_it_knows_which_rotator_to_use
-    e = Encrypt.new(54321, Time.now)
-    index_of_character = [12, 4, 18, 18, 0, 6, 4]
-    result = "b rotator"
-    assert_equal result, e.which_rotator("message")[1][1]
+    skip
+    static_date = Time.new 2015, 12, 10
+    e = Encrypt.new(54321, static_date)
+    result = [[12, 60], [4, 45], [18,34], [18, 26], [0, 60], [6, 45], [4, 34]]
+    assert_equal result, e.which_rotator("message")
+  end
+
+  def test_it_rotates_the_message_to_new_index
+    skip
+    static_date = Time.new 2015, 12, 10
+    e = Encrypt.new(54321, static_date)
+    result = [33, 10, 13, 5, 21, 12, 38]
+    assert_equal result, e.rotate_message("message")
+  end
+
+  def test_it_maps_new_index_to_new_message
+    skip
+    static_date = Time.new 2015, 12, 10
+    e = Encrypt.new(54321, static_date)
+    result = "7knfvm,"
+    assert_equal result, e.encrypt("message")
   end
 
 end

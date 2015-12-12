@@ -1,5 +1,4 @@
 class Encrypt
-  attr_accessor :characters_and_indices
   def initialize(key, date)
     @key = key
     @date = date
@@ -8,7 +7,16 @@ class Encrypt
   def character_chart
     characters = []
     characters << ("a".."z").to_a
-    characters << (0..9).to_a
+    characters << "0"
+    characters << "1"
+    characters << "2"
+    characters << "3"
+    characters << "4"
+    characters << "5"
+    characters << "6"
+    characters << "7"
+    characters << "8"
+    characters << "9"
     characters << " "
     characters << "."
     characters << ","
@@ -72,25 +80,51 @@ class Encrypt
   end
 
   def which_rotator(message)
-    index_of_character = map_message(message)
+    overall_rotation
+    initial_indices = map_message(message)
     rotators = []
-    shovels = (index_of_character.length / 4.0).ceil
+    shovels = (initial_indices.length / 4.0).ceil
     shovels.times do
-      rotators << "a rotator"
-      rotators << "b rotator"
-      rotators << "c rotator"
-      rotators << "d rotator"
+      rotators << @overall_rotations[0]
+      rotators << @overall_rotations[1]
+      rotators << @overall_rotations[2]
+      rotators << @overall_rotations[3]
     end
-    until rotators.length == index_of_character.length
+    until rotators.length == initial_indices.length
       rotators.pop
     end
-    index_of_character.zip(rotators)
+    initial_indices.zip(rotators)
   end
 
   def rotate_message(message)
-    characters_and_rotators = which_rotator(message)
-    index_of_character = map_message(message)
+    indices_and_rotators = which_rotator(message)
+    new_indices = []
+    i = 0
+    indices_and_rotators.length.times do
+      i += 1
+      new_indices << (indices_and_rotators[i-1][0] + (indices_and_rotators[i-1][1] % 39))
+     end
+     new_indices.map do |index|
+       if index > 38
+         index - 39
+       else
+         index
+       end
+     end
+  end
 
+  def encrypt(message)
+    message = message.downcase
+    new_indices = rotate_message(message)
+    encrypted_message = []
+    new_indices.each do |index|
+      @characters_and_indices.each do |character, location|
+        if index == location
+          encrypted_message << character
+        end
+      end
+    end
+    encrypted_message.join
   end
 
 end
