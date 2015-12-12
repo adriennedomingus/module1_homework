@@ -8,7 +8,7 @@ class CrackTest < MiniTest::Test
     static_date = Time.new 2015, 12, 10
     c = Crack.new("fd7gw n4,cny", static_date)
     result = [38, 2, 13, 24]
-    assert_equal result, c.map_end_of_encrypted
+    assert_equal result, c.map_last_four_of_encrypted
   end
 
   def test_it_knows_a_b_c_d_overall_rotations
@@ -29,7 +29,7 @@ class CrackTest < MiniTest::Test
     static_date = Time.new 2015, 12, 10
     c = Crack.new("abfd7gw n4,cny", static_date)
     result = [15, 26, 25, 38]
-    assert_equal result, c.all_rotators
+    assert_equal result, c.combined_rotation
   end
 
   def test_it_decrypts_message

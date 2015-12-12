@@ -1,23 +1,25 @@
-# class Enigma
-#
-#   def initialize
-#     @key = Random.rand(0..99999)
-#   end
-# end
+require_relative 'encrypt'
+require_relative 'decrypt'
+require_relative 'crack'
 
-characters = []
-characters << ("a".."z").to_a
-characters << (0..9).to_a
-characters << " "
-characters << "."
-characters << ","
-characters = characters.flatten
-indices = []
-indices = (0..38).to_a.flatten
-characters.map do |character|
-  character.to_s
+class Enigma < Encrypt
+
+  def initialize(message, key = Random.rand(0..99999).to_s, date = Time.now.strftime("%d%m%y").to_i)
+    @message = message
+    @key = key
+    @date = date
+  end
+
+  def encrypt(message)
+    Encrypt.new(@message, @key, @date).encrypt(message)
+  end
+
+  def decrypt(message)
+    Decrypt.new(@message, @key, @date).decrypt(message)
+  end
+
+  def crack(message)
+    Crack.new(@message, @date).crack(message)
+  end
+
 end
-characters_and_indices = characters.zip(indices)
-
-
-p characters_and_indices
