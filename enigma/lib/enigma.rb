@@ -9,16 +9,16 @@ class Enigma < Encrypt
     @date = date
   end
 
-  def encrypt(message, key = Random.rand(0..99999).to_s, date = Time.now.strftime("%d%m%y").to_i)
-    Encrypt.new(@key, @date).encrypt(message, key, date)
+  def encrypt(message, key = @key, date = @date)
+    Encrypt.new(key, date).encrypt(message, key, date)
   end
 
-  def decrypt(message, key = Random.rand(0..99999).to_s, date = Time.now.strftime("%d%m%y").to_i)
-    Decrypt.new(@key, @date).decrypt(message, key, date)
+  def decrypt(message, key = @key, date = @date)
+    Decrypt.new(key, date).decrypt(message, key, date)
   end
 
-  def crack(message, date = Time.now.strftime("%d%m%y").to_i)
-    Crack.new(@date).crack(message, date)
+  def crack(message, date = @date)
+    Crack.new(date).crack(message, date)
   end
 
 end

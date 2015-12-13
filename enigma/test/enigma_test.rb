@@ -25,7 +25,7 @@ class EnigmaTest < MiniTest::Test
   def test_it_cracks_and_decrypts_message
     static_date = Time.new 2015, 12, 10
     e = Enigma.new("fd7gw n4,cny", static_date)
-    result = "test ..end.."
-    assert_equal result, e.crack("fd7gw n4,cny", static_date)
+    result = "this is so secret ..end.."
+    assert_equal result, e.crack("0p,teqj.zw1tlkif0f2,lv7,f", static_date)
   end
 end

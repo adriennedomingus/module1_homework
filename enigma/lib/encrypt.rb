@@ -1,5 +1,5 @@
 class Encrypt
-  def initialize(key = Random.rand(0..99999), date = Time.now.strftime("%d%m%y").to_i)
+  def initialize(key = @key, date = @date)
     @key = key
     @date = date
   end
@@ -113,7 +113,7 @@ class Encrypt
      end
   end
 
-  def encrypt(message, key = Random.rand(0..99999), date = Time.now.strftime("%d%m%y").to_i)
+  def encrypt(message, key = @key, date = @date)
     message = message.downcase
     new_indices = rotate_message(message)
     encrypted_message = []

@@ -24,7 +24,7 @@ class Decrypt < Encrypt
      end
   end
 
-  def decrypt(message, key = Random.rand(0..99999).to_s, date = Time.now.strftime("%d%m%y").to_i)
+  def decrypt(message, key = @key, date = @date)
     message = message.downcase
     new_indices = rotate_encrypted_message(message)
     decrypted_message = []

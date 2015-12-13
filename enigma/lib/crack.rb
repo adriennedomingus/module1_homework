@@ -47,16 +47,16 @@ class Crack < Decrypt
     if @shift_rotator == 1
       @overall_rotations = @total_rotators
     elsif @shift_rotator == 2
-      @overall_rotations = [@total_rotators[1], @total_rotators[2], @total_rotators[3], @total_rotators[0]]
+      @overall_rotations = [@total_rotators[3], @total_rotators[0], @total_rotators[1], @total_rotators[2]]
     elsif @shift_rotator == 3
       @overall_rotations = [@total_rotators[2], @total_rotators[3], @total_rotators[0], @total_rotators[1]]
     elsif @shift_rotator == 0
-      @overall_rotations = [@total_rotators[3], @total_rotators[0], @total_rotators[1], @total_rotators[2]]
+      @overall_rotations = [@total_rotators[1], @total_rotators[2], @total_rotators[3], @total_rotators[0]]
     end
     @overall_rotations
   end
 
-  def crack(message, date = Time.now.strftime("%d%m%y").to_i)
+  def crack(message, date = @date)
     new_indices = rotate_encrypted_message(message)
     decrypted_message = []
     new_indices.each do |index|
