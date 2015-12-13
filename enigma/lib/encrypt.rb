@@ -1,8 +1,7 @@
 class Encrypt
-  def initialize(message, key, date)
+  def initialize(key = Random.rand(0..99999), date = Time.now.strftime("%d%m%y").to_i)
     @key = key
     @date = date
-    @message = message
   end
 
   def character_chart
@@ -53,7 +52,7 @@ class Encrypt
     @key_rotations
   end
 
-  def combined_rotation
+  def combined_rotation(message)
     date_rotation
     key_rotation
     a_overall_rotation = @date_rotations[0] + @key_rotations[0]
@@ -74,14 +73,14 @@ class Encrypt
   end
 
   def map_message(message)
-    message_characters = @message.chars
+    message_characters = message.chars
     message_characters.map do |character|
       map_letter(character)
     end
   end
 
   def which_rotator(message)
-    combined_rotation
+    combined_rotation(message)
     initial_indices = map_message(message)
     rotators = []
     shovels = (initial_indices.length / 4.0).ceil
@@ -114,9 +113,9 @@ class Encrypt
      end
   end
 
-  def encrypt(message)
-    message = @message.downcase
-    new_indices = rotate_message(@message)
+  def encrypt(message, key = Random.rand(0..99999), date = Time.now.strftime("%d%m%y").to_i)
+    message = message.downcase
+    new_indices = rotate_message(message)
     encrypted_message = []
     new_indices.each do |index|
       @characters_and_indices.each do |character, location|

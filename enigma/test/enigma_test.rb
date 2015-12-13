@@ -10,22 +10,22 @@ class EnigmaTest < MiniTest::Test
 
   def test_it_encrypts_a_message
     static_date = Time.new 2015, 12, 10
-    e = Enigma.new("test ..end..", 97521, static_date)
+    e = Enigma.new(97521, static_date)
     result = "fd7gw n4,cny"
-    assert_equal result, e.encrypt(@message)
+    assert_equal result, e.encrypt("test ..end..", 97521, static_date)
   end
 
   def test_it_decrypts_message
     static_date = Time.new 2015, 12, 10
-    e = Enigma.new("fd7gw n4,cny", 97521, static_date)
+    e = Enigma.new(97521, static_date)
     result = "test ..end.."
-    assert_equal result, e.decrypt("fd7gw n4,cny")
+    assert_equal result, e.decrypt("fd7gw n4,cny", 97521, static_date)
   end
 
   def test_it_cracks_and_decrypts_message
     static_date = Time.new 2015, 12, 10
     e = Enigma.new("fd7gw n4,cny", static_date)
     result = "test ..end.."
-    assert_equal result, e.crack(@input)
+    assert_equal result, e.crack("fd7gw n4,cny", static_date)
   end
 end

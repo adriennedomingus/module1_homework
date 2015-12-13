@@ -1,13 +1,12 @@
 require_relative 'decrypt'
 
 class Crack < Decrypt
-  def initialize(message, date)
+  def initialize(date)
     @date = date
-    @message = message
   end
 
-  def map_last_four_of_encrypted
-    @message_end = map_message(@message)
+  def map_last_four_of_encrypted(message)
+    @message_end = map_message(message)
     loop do
       @message_end.shift
       break if @message_end.length == 4
@@ -19,11 +18,11 @@ class Crack < Decrypt
     [13, 3, 37, 37]
   end
 
-  def overall_rotators
+  def overall_rotators(message)
     end_indices
-    map_last_four_of_encrypted
+    map_last_four_of_encrypted(message)
     i = 0
-    overall_rotators = []
+    @total_rotators = []
     4.times do
       i += 1
       rotator = @message_end[i - 1] - end_indices[i-1]
@@ -32,32 +31,32 @@ class Crack < Decrypt
       else
         rotator
       end
-      overall_rotators << rotator
+      @total_rotators << rotator
     end
-    overall_rotators
+    @total_rotators
   end
 
-  def order_of_rotators
-    @shift_rotator = (@message.length - 7) % 4
+  def order_of_rotators(message)
+    @shift_rotator = (message.length - 7) % 4
     @shift_rotator
   end
 
-  def combined_rotation
-    overall_rotators
-    order_of_rotators
+  def combined_rotation(message)
+    overall_rotators(message)
+    order_of_rotators(message)
     if @shift_rotator == 1
-      @overall_rotations = overall_rotators
+      @overall_rotations = @total_rotators
     elsif @shift_rotator == 2
-      @overall_rotations = [overall_rotators[1], overall_rotators[2], overall_rotators[3], overall_rotators[0]]
+      @overall_rotations = [@total_rotators[1], @total_rotators[2], @total_rotators[3], @total_rotators[0]]
     elsif @shift_rotator == 3
-      @overall_rotations = [overall_rotators[2], overall_rotators[3], overall_rotators[0], overall_rotators[1]]
+      @overall_rotations = [@total_rotators[2], @total_rotators[3], @total_rotators[0], @total_rotators[1]]
     elsif @shift_rotator == 0
-      @overall_rotations = [overall_rotators[3], overall_rotators[0], overall_rotators[1], overall_rotators[2]]
+      @overall_rotations = [@total_rotators[3], @total_rotators[0], @total_rotators[1], @total_rotators[2]]
     end
     @overall_rotations
   end
 
-  def crack(message)
+  def crack(message, date = Time.now.strftime("%d%m%y").to_i)
     new_indices = rotate_encrypted_message(message)
     decrypted_message = []
     new_indices.each do |index|

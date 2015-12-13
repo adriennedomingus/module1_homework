@@ -2,10 +2,9 @@ require_relative 'encrypt'
 
 class Decrypt < Encrypt
 
-  def initialize(message, key, date)
+  def initialize(key, date)
     @key = key
     @date = date
-    @message = message
   end
 
   def rotate_encrypted_message(message)
@@ -25,8 +24,8 @@ class Decrypt < Encrypt
      end
   end
 
-  def decrypt(message)
-    message = @message.downcase
+  def decrypt(message, key = Random.rand(0..99999).to_s, date = Time.now.strftime("%d%m%y").to_i)
+    message = message.downcase
     new_indices = rotate_encrypted_message(message)
     decrypted_message = []
     new_indices.each do |index|
