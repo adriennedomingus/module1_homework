@@ -37,7 +37,7 @@ class EncryptTest < MiniTest::Test
   def test_it_maps_rotated_indices_to_new_message
     r = Encrypt.new
     result = "UryyB"
-    assert_equal result, r.output_new_message("Hello")
+    assert_equal result, r.encrypt("Hello")
   end
 end
 
@@ -58,6 +58,6 @@ class DecryptTest < MiniTest::Test
   def test_it_maps_rotated_indices_to_new_message
     r = Decrypt.new
     result = "Hello"
-    assert_equal result, r.output_new_message("UryyB")
+    assert_equal result, r.decrypt("UryyB")
   end
 end

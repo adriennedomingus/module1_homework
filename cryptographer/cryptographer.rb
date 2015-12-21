@@ -2,9 +2,6 @@
 
 class EncryptionEngine
 
-  def initialize
-  end
-
   def encrypt
   end
 
@@ -43,16 +40,6 @@ class Rotator
     end
   end
 
-end
-
-class Encrypt < Rotator
-  def rotate_message(message)
-    message_indices = map_message(message)
-    message_indices.map do |index|
-      (index + 13) % 85
-    end
-  end
-
   def output_new_message(message)
     @rotated_message = rotate_message(message)
     @new_message = []
@@ -64,6 +51,20 @@ class Encrypt < Rotator
         end
       end
     @new_message.join
+  end
+
+end
+
+class Encrypt < Rotator
+  def rotate_message(message)
+    message_indices = map_message(message)
+    message_indices.map do |index|
+      (index + 13) % 85
+    end
+  end
+
+  def encrypt(message)
+    output_new_message(message)
   end
 end
 
@@ -76,16 +77,7 @@ class Decrypt < Rotator
     end
   end
 
-  def output_new_message(message)
-    @rotated_message = rotate_message(message)
-    @new_message = []
-      @rotated_message.map do |character_index|
-        @characters_and_indices.each do |key, value|
-          if character_index == value
-            @new_message << key
-          end
-        end
-      end
-    @new_message.join
+  def decrypt(message)
+    output_new_message(message)
   end
 end
