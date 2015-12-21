@@ -12,29 +12,39 @@
 # You win once you complete the final transformation
 
 # =====  Starting Spot:  =====
-a = ["e", "a", "c", "b", "d"]
-b = 0
+module SortAlgorithms
+  class BubbleSort
 
-while b < a.length
-  c = 0
-  d = 1
+    attr_reader :array
 
-  while d < a.length
-    e = a[c]
-    f = a[d]
-    if f < e
-      a[c]  = f
-      a[d] = e
+    def initialize(array)
+      @array = array
     end
-    c += 1
-    d += 1
+
+    def sort
+      array.length.times { bubble_across }
+      array
+    end
+
+    def bubble_across
+      array.length.pred.times { |left_index| bubble_once(left_index) }
+    end
+
+    def bubble_once(left_index)
+      swap(left_index) if swap?(left_index)
+    end
+
+    def swap(left_index)
+      array[left_index], array[left_index+1] = array[left_index+1], array[left_index]
+    end
+
+    def swap?(left_index) # ~> ArgumentError: wrong number of arguments (1 for 0)
+      array[left_index+1] < array[left_index]
+    end
+
   end
-
-  b += 1
 end
-
-a
-
+SortAlgorithms::BubbleSort.new(["e", "a", "c", "b", "d"]).sort # =>
 # =====  Rename the variables  =====
 # The variables currently have names which do not allow us to think about what they represent
 # Rename them, so that their names describe how to think about them
@@ -213,3 +223,16 @@ a
 #   If it uses an instance variable or an instance method,
 #   Then it is fine, because it can still look them up.
 #   If it uses a local variable, then it won't have access, we will need to pass it.
+
+# ~> ArgumentError
+# ~> wrong number of arguments (1 for 0)
+# ~>
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:41:in `swap?'
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:34:in `bubble_once'
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:30:in `block in bubble_across'
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:30:in `times'
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:30:in `bubble_across'
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:25:in `block in sort'
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:25:in `times'
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:25:in `sort'
+# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:47:in `<main>'
