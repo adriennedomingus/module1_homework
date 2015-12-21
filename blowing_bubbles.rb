@@ -38,13 +38,13 @@ module SortAlgorithms
       array[left_index], array[left_index+1] = array[left_index+1], array[left_index]
     end
 
-    def swap?(left_index) # ~> ArgumentError: wrong number of arguments (1 for 0)
+    def swap?(left_index)
       array[left_index+1] < array[left_index]
     end
 
   end
 end
-SortAlgorithms::BubbleSort.new(["e", "a", "c", "b", "d"]).sort # =>
+SortAlgorithms::BubbleSort.new(["e", "a", "c", "b", "d"]).sort # => ["a", "b", "c", "d", "e"]
 # =====  Rename the variables  =====
 # The variables currently have names which do not allow us to think about what they represent
 # Rename them, so that their names describe how to think about them
@@ -223,16 +223,3 @@ SortAlgorithms::BubbleSort.new(["e", "a", "c", "b", "d"]).sort # =>
 #   If it uses an instance variable or an instance method,
 #   Then it is fine, because it can still look them up.
 #   If it uses a local variable, then it won't have access, we will need to pass it.
-
-# ~> ArgumentError
-# ~> wrong number of arguments (1 for 0)
-# ~>
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:41:in `swap?'
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:34:in `bubble_once'
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:30:in `block in bubble_across'
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:30:in `times'
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:30:in `bubble_across'
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:25:in `block in sort'
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:25:in `times'
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:25:in `sort'
-# ~> /Users/adrienne/Turing/1module/module1_homework/blowing_bubbles.rb:47:in `<main>'
