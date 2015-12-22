@@ -9,10 +9,8 @@ class CostumeTest < Minitest::Test
     assert_equal "Batman", costume.style
   end
 
-  def test_other_style_of_costume
-    skip
+  def test_other_style_of_costume=
     costume = Costume.new("Princess")
     assert_equal "Princess", costume.style
   end
 end
-
