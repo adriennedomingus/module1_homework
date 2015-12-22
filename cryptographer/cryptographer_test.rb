@@ -3,6 +3,18 @@ require 'minitest/pride'
 require_relative 'cryptographer'
 
 class EncryptionEngineTest < MiniTest::Test
+
+  def test_it_encrypts_a_message
+    e = EncryptionEngine.new
+    result = "UryyB"
+    assert_equal result, e.encrypt("Hello")
+  end
+
+  def test_it_decrypts_a_message
+    e = EncryptionEngine.new
+    result = "Hello"
+    assert_equal result, e.decrypt("UryyB")
+  end
 end
 
 class RotatorTest < MiniTest::Test
