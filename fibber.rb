@@ -10,6 +10,7 @@ def fibbonacci(quantity)
     sequence << (first + second).to_s + " "
     second, first = first + second, second
   end
+  sequence = format(sequence)
   sequence = output(sequence)
   sequence.join
 end
@@ -21,6 +22,16 @@ def output(sequence)
     n += 6
   end
   sequence
+end
+
+def format(sequence)
+  new_sequence = []
+  sequence.each do |num|
+    if num != "\n"
+      new_sequence << "% 4d" % num + " "
+    end
+  end
+  new_sequence
 end
 
 puts fibbonacci(25)
