@@ -54,7 +54,7 @@ class PirateTest < Minitest::Test
     # pirate starts with 0 booty
   end
 
-  def test_a_pirate_gets_100_booty_for_robbon
+  def test_a_pirate_gets_100_booty_for_robbing_ship
     pirate = Pirate.new("Jack")
     pirate.rob_ship
     assert_equal 100, pirate.booty

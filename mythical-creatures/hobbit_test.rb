@@ -47,8 +47,6 @@ class HobbitTest < Minitest::Test
       hobbit.celebrate_birthday
     end
     assert hobbit.adult?
-
-    # still adult, one year later
     hobbit.celebrate_birthday
     assert hobbit.adult?
   end
@@ -68,17 +66,11 @@ class HobbitTest < Minitest::Test
 
     assert hobbit.has_ring?
     refute hobbit2.has_ring?
-    # create a hobbit named Frodo
-    # create a second hobbit named Sam
-    # check that .has_ring? for Frodo returns true
-    # check that .has_ring? for Sam returns false
   end
 
   def test_hobbits_are_short
-    hobbit = Hobbit.new("Short")
-    assert hobbit.is_short? 
-    # create a hobbit
-    # check that .is_short? returns true
+    hobbit = Hobbit.new("Frodo")
+    assert hobbit.is_short?
   end
 
 end
