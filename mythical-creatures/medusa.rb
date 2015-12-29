@@ -1,40 +1,35 @@
 class Medusa
 
-  attr_accessor :name, :statues, :alive, :stoned
+  attr_reader :name, :statues
 
-  def initialize(name, statues = [], alive = true, stoned = 0)
+  def initialize(name)
     @name = name
-    @statues = statues
-    @alive = alive
-    @stoned = stoned
+    @statues = []
+    @alive = true
+    @stares = 0
   end
 
   def stare(victim)
-    @stoned += 1
     @statues << victim
-    victim.got_stoned
-    if @statues.count > 3
+    if @statues.length > 3
       @statues.shift.unstone
     end
+    @stares += 1
+    victim.got_stoned
   end
 
   def alive?
-    if @stoned < 5
-      @alive = true
-    else
-      @alive = false
-    end
+    @stares < 5
   end
-
 end
 
 class Person
 
-  attr_accessor :name, :stoned
+  attr_reader :name
 
-  def initialize(name, stoned = false)
+  def initialize(name)
     @name = name
-    @stoned = stoned
+    @stoned = false
   end
 
   def stoned?

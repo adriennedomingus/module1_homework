@@ -1,28 +1,27 @@
 class Wizard
 
-  attr_accessor :name, :bearded, :rested
+  attr_reader :name, :spells, :bearded
 
-  def initialize(name, bearded = true, rested = 0)
+  def initialize(name, bearded: true)
     @name = name
     @bearded = bearded
-    @rested = rested
+    @spells = 0
   end
 
   def bearded?
-    @bearded == true ? true : false
+    bearded
+  end
+
+  def incantation(command)
+    "sudo #{command}"
   end
 
   def rested?
-    @rested < 3 ? true : false
+    @spells < 3
   end
 
   def cast
-    @rested += 1
+    @spells += 1
     "MAGIC MISSILE!"
   end
-
-  def incantation(incantation)
-    "sudo " + incantation
-  end
-
 end

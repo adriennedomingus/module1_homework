@@ -57,7 +57,6 @@ class MedusaTest < Minitest::Test
     medusa.stare(victim4)
 
     assert_equal 3, medusa.statues.count
-    # your code here
   end
 
   def test_if_a_fourth_victim_is_stoned_first_is_unstoned
@@ -71,14 +70,13 @@ class MedusaTest < Minitest::Test
     medusa.stare(victim2)
     medusa.stare(victim3)
     medusa.stare(victim4)
-    assert victim4.stoned
+    assert victim4.stoned?
     refute victim.stoned?
-    # your code here
   end
 
   def test_is_alive_by_default
     medusa = Medusa.new("Cassiopeia")
-    assert_equal true, medusa.alive?
+    assert medusa.alive?
   end
 
   def test_is_not_alive_after_five_victims
@@ -93,11 +91,10 @@ class MedusaTest < Minitest::Test
     medusa.stare(victim2)
     medusa.stare(victim3)
     medusa.stare(victim4)
+    assert medusa.alive?
     medusa.stare(victim5)
 
-    assert_equal false, medusa.alive?
-    # your code here
+    refute medusa.alive?
   end
-
 
 end
