@@ -1,6 +1,6 @@
 class Unicorn
 
-  attr_accessor :name, :color
+  attr_reader :name, :color
 
   def initialize(name, color = "white")
     @name = name
@@ -8,11 +8,10 @@ class Unicorn
   end
 
   def white?
-    @color == "white" ? true : false
+    @color == "white"
   end
 
   def say(phrase)
     "**;* #{phrase} **;*"
   end
-
 end
