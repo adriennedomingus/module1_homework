@@ -1,49 +1,49 @@
 class Ogre
 
-  attr_accessor :name, :home, :encounter_counter, :swings, :hit
+  attr_reader :name, :home, :swings, :encounter_counter
 
-  def initialize(name, home = "Swamp", encounter_counter = 0, swings = 0)
+  def initialize(name, home = "Swamp")
     @name = name
     @home = home
-    @encounter_counter = encounter_counter
-    @swings = swings
-    $hit = hit
-  end
-
-  def encounter
-    @encounter_counter += 1
-    @swings += 1
+    @swings = 0
+    @encounter_counter = 0
   end
 
   def swing_a_club
-    @swings += 1
+    @swings += 1 if @encounter_counter % 3 == 0
+  end
+
+  def encounter(human)
+    swing_a_club
+    @encounter_counter += 1
+    human.notices_ogre = true if @encounter_counter % 3 == 0
   end
 
   def hit?(human)
-    $hit = true if @swings % 2 == 0
+    human.knocked_out = true
   end
 
   def apologize(human)
-    $hit = false
+    human.knocked_out = false
   end
-
 end
 
 class Human
 
-  attr_accessor :name
+  attr_reader :name
+  attr_accessor :knocked_out, :notices_ogre
 
   def initialize(name = "Jane")
     @name = name
+    @knocked_out = false
+    @notices_ogre = false
   end
 
   def notices_ogre?
-    @encounter_counter = 0
-    true if @encounter_counter % 3 == 0
+    @notices_ogre
   end
 
   def knocked_out?
-    $hit == true ? true : false
+    knocked_out
   end
-
 end
