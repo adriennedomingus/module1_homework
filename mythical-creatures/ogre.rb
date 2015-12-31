@@ -40,7 +40,7 @@ class Human
   end
 
   def notices_ogre?
-    @notices_ogre
+    notices_ogre
   end
 
   def knocked_out?
