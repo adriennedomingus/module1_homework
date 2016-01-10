@@ -14,8 +14,7 @@ class CreditCheck
   end
 
   def self.add_double_digits(number)
-    doubled_number = double_every_other(number)
-    doubled_number.map do |num|
+    double_every_other(number).map do |num|
       if num > 9
         nums = num.to_s.chars
         nums[0].to_i + nums[1].to_i
@@ -26,14 +25,12 @@ class CreditCheck
   end
 
   def self.add_all(number)
-    adjusted = add_double_digits(number)
-    adjusted.reduce do |sum, num|
+    add_double_digits(number).reduce do |sum, num|
       sum += num
     end
   end
 
   def self.valid?(number)
-    whole_sum = add_all(number)
-    whole_sum % 10 == 0
+    add_all(number) % 10 == 0
   end
 end

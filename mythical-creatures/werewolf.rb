@@ -6,7 +6,6 @@ class Werewolf
     @name = name
     @location = location
     @human = true
-    @werewolf = false
     @hungry = false
   end
 
@@ -19,17 +18,15 @@ class Werewolf
   end
 
   def werewolf?
-    @werewolf
+    !@human
   end
 
   def change!
     @hungry = true
     if @human
       @human = false
-      @werewolf = true
     else
       @human = true
-      @werewolf = false
     end
   end
 end

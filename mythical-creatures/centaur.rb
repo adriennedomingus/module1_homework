@@ -29,10 +29,7 @@ class Centaur
   end
 
   def sleep
-    @crank = 0
-    if standing?
-      "NO!"
-    end
+    standing? ? "NO!" : @crank = 0
   end
 
   def cranky?
