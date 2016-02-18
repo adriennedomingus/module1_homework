@@ -1,0 +1,4 @@
+<%= @tool.name %> - <%= @tool.quantity %>
+<%= @tool.formatted_price %>
+<%= link_to "Back to all tools", tools_path %>
+<%= link_to "Delete #{@tool.name}", tool_path(@tool.id), method: "delete" %>

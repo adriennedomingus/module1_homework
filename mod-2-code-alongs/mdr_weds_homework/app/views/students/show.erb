@@ -1,0 +1,7 @@
+<%= @student.first_name %>
+<% @student.addresses.each do |address| %>
+    <%= address.address %>
+<% end %>
+<% @student.courses.each do |course| %>
+  <%= course.name %>
+<% end %>
