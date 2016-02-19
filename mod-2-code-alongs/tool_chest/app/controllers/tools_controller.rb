@@ -29,7 +29,7 @@ class ToolsController < ApplicationController
   def update
     @tool = Tool.find(params[:id])
     if @tool.update(tool_params)
-      redirect_to tool_path(@tool.id)
+      redirect_to tool_path(@tool)
     else
       render :edit
     end
