@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  date: MyText
+  meetable_id: 1
+  meetable_type: MyText
+
+two:
+  name: MyText
+  date: MyText
+  meetable_id: 1
+  meetable_type: MyText

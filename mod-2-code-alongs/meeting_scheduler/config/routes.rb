@@ -53,9 +53,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  # get '/tasks', to: 'tasks#index'
-  # get '/tasks/new', to: 'tasks#new'
-  # get '/tasks/:id', to: 'tasks#show'
-  # get '/tasks/:id/edit', to: 'tasks#edit'
-  resources :tasks
 end
