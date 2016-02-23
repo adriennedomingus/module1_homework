@@ -8,7 +8,11 @@ class ApplicationController < ActionController::Base
     Tool.find(session[:most_recent_tool]) || "There are no tools"
   end
 
+  def current_tool_count
+    session[:current_tool_count] ||= 0
+  end
+
   def current_tool_summary
-    "Current Tool Count: #{session[:current_tool_count]}; Current Potential Revenue: $#{session[:current_potential_revenue] / 100.00}"
+    "Current Tool Count: #{current_tool_count}; Current Potential Revenue: $#{session[:current_potential_revenue] / 100.00}"
   end
 end

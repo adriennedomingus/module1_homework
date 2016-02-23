@@ -78,11 +78,29 @@ class Classifier
   def feature_probability(feature, category)
     (word_count(feature, category).to_f) / (category_count(category).to_f)
   end
+
+  def category_probability(category)
+    category_count(category).to_f / total_count.to_f
+  end
+
+  def document_probability(document, category)
+    all_features = getwords(document)
+    all_features.map do |feature|
+      feature_probability(feature, category)
+    end.reduce(:*)
+  end
+
+  def probability(document, category)
+    document_probability(document, category) * category_probability(category)
+  end
 end
 
 
 classifier = Classifier.new
 puts classifier.train("This is a string string a", "good")
-puts classifier.train("This is a nother string alkdjfa;", "bad")
+puts classifier.train("I am a rabbit but I have a string", "bad")
 puts classifier.classification_count
-puts classifier.feature_probability("string", "good")
+# puts classifier.feature_probability("string", "good")
+# puts classifier.category_probability("good")
+# puts classifier.document_probability("This is a string string a", "good")
+puts classifier.probability("a string", "good")
