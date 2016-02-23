@@ -10,6 +10,7 @@
       <th>Stock</th>
       <th>Description</th>
       <th>Image url</th>
+      <th>Buy</th>
       <th colspan="4"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= print_stock(product.stock) %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
+        <td><%= link_to "Add to Cart", new_order_item_path(product_id: product.id) %></td>
         <td><%= link_to 'Product Specifics', product_path(product) %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
