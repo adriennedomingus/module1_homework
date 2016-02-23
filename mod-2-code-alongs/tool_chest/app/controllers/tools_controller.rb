@@ -2,6 +2,9 @@ class ToolsController < ApplicationController
 
   def index
     @tools = Tool.all
+    session[:most_recent_tool] = Tool.order(:created_at).last.id
+    session[:current_tool_count] = Tool.sum(:quantity)
+    session[:current_potential_revenue] = Tool.sum("quantity * price")
   end
 
   def show
@@ -16,8 +19,10 @@ class ToolsController < ApplicationController
     # @tool = Tool.new(name: params[:tool][:name], quantity: params[:tool][:quantity], price: params[:tool][:price])
     @tool = Tool.new(tool_params)
     if @tool.save
+      flash[:notice] = "Tool was successfully created"
       redirect_to tool_path(@tool.id)
     else
+      flash.now[:error] = @tool.errors.full_messages.join(", ")
       render :new
     end
   end
