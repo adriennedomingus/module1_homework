@@ -7,6 +7,7 @@
     <tr>
       <th>Title</th>
       <th>Price</th>
+      <th>Stock</th>
       <th>Description</th>
       <th>Image url</th>
       <th colspan="4"></th>
@@ -18,6 +19,7 @@
       <tr>
         <td><%= product.title %></td>
         <td><%= print_price(product.price) %></td>
+        <td><%= print_stock(product.stock) %></td>
         <td><%= product.description %></td>
         <td><%= product.image_url %></td>
         <td><%= link_to 'Product Specifics', product_path(product) %></td>
