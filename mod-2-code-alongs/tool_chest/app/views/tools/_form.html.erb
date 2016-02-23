@@ -1,4 +1,5 @@
-<%= form_for @tool do |f| %>
+
+<%= form_for [current_user, @tool] do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name %>
 <%= f.label :quantity %>

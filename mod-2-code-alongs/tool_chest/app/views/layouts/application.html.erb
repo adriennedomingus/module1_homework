@@ -7,9 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <strong>Newest tool:</strong> <%= most_recent_tool.name %><br/>
   <p>
-    <strong>Current Sessions Tool Summary:</strong> <%= current_tool_summary %>
+    <% if most_recent_tool %>
+      <strong>Newest tool:</strong> <%= most_recent_tool.name %>
+    <% end %>
   </p>
   <% flash.each do |type, message| %>
     <%= content_tag :div, message, class: "flash_#{type}" %>
