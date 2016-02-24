@@ -4,12 +4,9 @@ class UserCanLogOutTest < ActionDispatch::IntegrationTest
   test "registered user sees dashboard and welcome message" do
     user = User.create(username: "adrienne", password: "password")
 
-    visit login_path
-    fill_in "Username", with: "adrienne"
-    fill_in "Password", with: "password"
-    click_on "Login"
-    # current_user = user.id
-    # visit "/users/#{user.id}"
+    ApplicationController.any_instance.stubs(:current_user).returns(user)
+
+    visit  "/users/#{user.id}"
 
     assert_equal "/users/#{user.id}", current_path
     assert page.has_content?("Welcome, #{user.username}")

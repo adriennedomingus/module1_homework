@@ -10,7 +10,6 @@
   <p>
     <% if current_user %>
       Welcome <%= current_user.username %><br/>
-      <%= link_to "Log Out", logout_path, method: :delete %><br/>
     <% end %>
     <% if most_recent_tool %>
       <strong>Newest tool:</strong> <%= most_recent_tool.name %>

@@ -30,6 +30,9 @@ class ToolsController < ApplicationController
 
   def edit
     @tool = Tool.find(params[:id])
+    if @tool.user != current_user
+      render file: '/public/404'
+    end
   end
 
   def update
