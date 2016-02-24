@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :users, only: [:new, :create, :show] do
+  resources :users do
+    resources :tools
+  end
+
+  namespace 'admin' do
     resources :tools
   end
 

@@ -13,6 +13,9 @@ class ToolsController < ApplicationController
 
   def new
     @tool = Tool.new
+    if User.find(params[:user_id]) != current_user
+      render file: '/public/404'
+    end
   end
 
   def create

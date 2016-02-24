@@ -45,4 +45,7 @@ class UserCanEditAToolTest < ActionDispatch::IntegrationTest
     refute page.has_content?("20.0")
   end
 
+  test "admin can create tools for any user" do
+  end
+
 end
