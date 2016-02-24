@@ -100,7 +100,8 @@ classifier = Classifier.new
 puts classifier.train("This is a string string a", "good")
 puts classifier.train("I am a rabbit but I have a string", "bad")
 puts classifier.classification_count
-# puts classifier.feature_probability("string", "good")
+puts "Feature Count #{classifier.feature_count}"
+puts "Feature Prob: #{classifier.feature_probability("string", "good")}"
 # puts classifier.category_probability("good")
 # puts classifier.document_probability("This is a string string a", "good")
 puts classifier.probability("a string", "good")

@@ -18,6 +18,7 @@ class ToolsController < ApplicationController
   def create
     @tool = Tool.new(tool_params)
     if @tool.save
+      # @tool.user_id = current_user.id
       @tool.update(user_id: current_user.id)
       flash[:notice] = "Tool was successfully created"
       redirect_to user_tool_path(current_user, @tool.id)
@@ -47,6 +48,6 @@ class ToolsController < ApplicationController
 
   private
   def tool_params
-    params.require(:tool).permit(:name, :quantity, :price)
+    params.require(:tool).permit(:name, :quantity, :price, :category_id)
   end
 end

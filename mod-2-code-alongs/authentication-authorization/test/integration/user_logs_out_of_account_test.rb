@@ -3,7 +3,7 @@ require 'test_helper'
 class UserLogsOutOfAccountTest < FeatureTest
   test "user sees option to log in" do
     user = User.create(username: "adrienne", password: "password")
-
+    # session[:user_id] = user.id
     visit login_path
     fill_in "Username", with: "adrienne"
     fill_in "Password", with: "password"

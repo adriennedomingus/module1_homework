@@ -8,6 +8,8 @@ class UserCanLogOutTest < ActionDispatch::IntegrationTest
     fill_in "Username", with: "adrienne"
     fill_in "Password", with: "password"
     click_on "Login"
+    # current_user = user.id
+    # visit "/users/#{user.id}"
 
     assert_equal "/users/#{user.id}", current_path
     assert page.has_content?("Welcome, #{user.username}")
