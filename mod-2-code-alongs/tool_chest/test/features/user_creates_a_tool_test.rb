@@ -47,7 +47,7 @@ class ToolCreationTest < ActionDispatch::IntegrationTest
     fill_in "Quantity", with: "10"
     click_link_or_button "Create Tool"
     # assert_equal current_path, user_tool_path(user, Tool.last)
-
+  
     within(".tool_info") do
       assert page.has_content?("Screwdriver")
       assert page.has_content?("10.99")
