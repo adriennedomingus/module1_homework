@@ -1,6 +1,9 @@
 class ToolsController < ApplicationController
 
   def index
+    if params[:user_id].to_i != current_user.id
+      render file: '/public/404'
+    end
     @tools = Tool.all
     session[:most_recent_tool] = Tool.where(user_id: session[:user_id]).order(:created_at).last.id
     session[:current_tool_count] = Tool.sum(:quantity)
@@ -20,11 +23,11 @@ class ToolsController < ApplicationController
 
   def create
     @tool = Tool.new(tool_params)
+    @user = User.find(params[:user_id])
     if @tool.save
-      # @tool.user_id = current_user.id
-      @tool.update(user_id: current_user.id)
+      @tool.update(user_id: @user.id)
       flash[:notice] = "Tool was successfully created"
-      redirect_to user_tool_path(current_user, @tool.id)
+      redirect_to user_tool_path(@user, @tool.id)
     else
       flash.now[:error] = @tool.errors.full_messages.join(", ")
       render :new

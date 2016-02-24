@@ -45,7 +45,23 @@ class UserCanEditAToolTest < ActionDispatch::IntegrationTest
     refute page.has_content?("20.0")
   end
 
-  test "admin can create tools for any user" do
+  test "admin can edit tools for any user" do
+    admin = User.create(username: "adrienne", password: "password", role: 1)
+    user = User.create(username: "justin", password: "password")
+
+    ApplicationController.any_instance.stubs(:current_user).returns(admin)
+
+    tool = user.tools.create(name: "screwdriver", quantity: 10, price: 10000)
+
+    visit edit_admin_user_tool_path(user, tool)
+    fill_in "Name", with: "wrench"
+    fill_in "tool[quantity]", with: "5"
+    fill_in "Price", with: "2000"
+    click_link_or_button "Update Tool"
+
+    assert page.has_content?("wrench")
+    assert page.has_content?("5")
+    assert page.has_content?("20.0")
   end
 
 end

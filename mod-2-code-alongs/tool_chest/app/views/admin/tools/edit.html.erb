@@ -1,4 +1,4 @@
-<%= form_for [current_user, @tool] do |f| %>
+<%= form_for [@user, @tool], url: admin_user_tool_path(@user, @tool), method: :patch do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name %>
 <%= f.label :quantity %>

@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   end
 
   namespace 'admin' do
-    resources :tools
+    resources :categories
+    resources :users do
+      resources :tools
+    end
   end
 
   get '/login', to: 'sessions#new'
