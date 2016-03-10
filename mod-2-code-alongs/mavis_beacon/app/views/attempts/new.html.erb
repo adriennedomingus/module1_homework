@@ -1,0 +1,7 @@
+<%= @level.text %>
+
+<%= form_for([@level, @attempt]) do |f| %>
+  <%= f.label :text %>
+  <%= f.text_area :text %>
+  <%= f.submit "Score" %>
+<% end %>

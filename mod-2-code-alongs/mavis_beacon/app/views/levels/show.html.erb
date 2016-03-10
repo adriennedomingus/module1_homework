@@ -1,0 +1,11 @@
+<%= link_to "Start Typing Test", new_level_attempt_path(@level) %>
+<%= @level.title %>
+
+<ul id="attempts">
+  <% @level.attempts.each do |attempt| %>
+  <li>
+    <%= attempt.created_at %>
+    <%= attempt.percent_correct %>%
+  </li>
+  <% end %>
+</ul>
