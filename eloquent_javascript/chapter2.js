@@ -1,33 +1,22 @@
-var min = function(numOne, numTwo) {
-  if (numOne > numTwo) {
-    return numTwo;
-  }
-  return numOne;
+var string = ""
+for (var i = 1; string.length < 7; i++) {
+  string = string + "#"
+  console.log(string);
 }
 
-var recursiveEven = function(number) {
-  if (number < 1) {
-    number = number * -1
-  }
-  if (number === 0) {
-    return true;
-  } else if (number === 1 ) {
-    return false;
-  } else if (number > 1) {
-    return recursiveEven(number - 2);
+for(var i = 1; i < 101; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i)
   }
 }
 
-var countChar = function(string, character) {
-  var counter = 0
-  for (var i = 0; i < string.length; i++) {
-    if (string.charAt(i) === character) {
-      counter++
-    }
-  }
-  return counter
-}
-
-var countBs = function(string) {
-  return countChar(string, "B")
-}
+var row = ["#", " ", "#", " ", "#", " ", "#", " ", "\n", " ", "#", " ", "#", " ", "#", " ", "# "]
+var twoRows = row.join("")
+var board = twoRows + "\n" + twoRows + "\n" + twoRows + "\n" + twoRows
+console.log(board)
