@@ -13,5 +13,10 @@ var sum = function(range) {
   }
   return total
 }
-
-console.log(sum(range(1, 10)))
+function reverseArray(array) {
+  newArray = []
+  while(array.length > 0) {
+    newArray.push(array.pop());
+  }
+  return newArray
+}
