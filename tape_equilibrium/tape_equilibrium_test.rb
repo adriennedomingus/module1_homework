@@ -16,4 +16,8 @@ class TapeEquilibriumTest < MiniTest::Test
   def test_two_elements
     assert_equal(9, solution([12, 3]))
   end
+
+  def test_two_same_elements
+    assert_equal(0, solution([1, 1]))
+  end
 end
