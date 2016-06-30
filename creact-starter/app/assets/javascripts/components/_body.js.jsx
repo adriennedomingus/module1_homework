@@ -18,6 +18,19 @@ var Body = React.createClass({
       }
     })
   },
+  onUpdate() {
+    if (this.state.editable) {
+      var name = this.refs.name.value;
+      var details = this.refs.details.value;
+      var skill = {name: name, details: details }
+
+      this.props.handleUpdate(skill);
+    }
+    this.setState({editable: !this.state.editable })
+  },
+  handleUpdate(skill) {
+    console.log(skill, 'in handleUpdate')
+  },
 
   removeSkillFromDOM(id) {
     var newSkills = this.state.skills.filter((skill) => {

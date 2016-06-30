@@ -4141,3 +4141,1871 @@ Processing by Api::V1::SkillsController#destroy as */*
   [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 5]]
   [1m[35m (8.4ms)[0m  COMMIT
 Completed 204 No Content in 15ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-29 16:11:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 3002ms (Views: 2997.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/components/_all_skills.self-b47125245d973e897d1d2e980e0d99a41243e07e7d12d4cc46bf5f8ddba16a91.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-29 16:11:17 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-29 16:11:17 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (1.6ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 44ms (Views: 34.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:27:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 3722ms (Views: 3719.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/_all_skills.self-f0d17056d85fa16ae7d4c0555f9e7db01f1a610bc039ea1d83966340b8c9040f.js?body=1" for ::1 at 2016-06-30 09:27:45 -0700
+
+
+Started GET "/assets/components/_skill.self-6a9fc801089c28bed3fa78d34e30e0e68ea6c14def22d22933c9cbc115bc6d4b.js?body=1" for ::1 at 2016-06-30 09:27:45 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:27:46 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (1.1ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 63ms (Views: 48.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:28:57 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1377ms (Views: 1373.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/components/_all_skills.self-f0d17056d85fa16ae7d4c0555f9e7db01f1a610bc039ea1d83966340b8c9040f.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/components/_skill.self-7c49e8a71dca2b1f19d87e5548a1fd72d888be6560598c1c3767a1dcfef807dd.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:28:59 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:29:00 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[36mSkill Load (0.5ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+Completed 200 OK in 39ms (Views: 29.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:30:26 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1628ms (Views: 1625.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:30:27 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/components/_all_skills.self-f0d17056d85fa16ae7d4c0555f9e7db01f1a610bc039ea1d83966340b8c9040f.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/components/_skill.self-5e16b052796bc40c0ee68b988d80b3ece360590dbe7726b1695106d4483ce336.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:30:28 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:30:28 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 29ms (Views: 23.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:30:56 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1557ms (Views: 1553.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/components/_skill.self-d08523d363621d5245b6f80b36742f015ab630aeb430211565e377384aa94f5b.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/components/_all_skills.self-f0d17056d85fa16ae7d4c0555f9e7db01f1a610bc039ea1d83966340b8c9040f.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:30:58 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:30:58 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[36mSkill Load (0.8ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+Completed 200 OK in 32ms (Views: 25.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:31:11 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1443ms (Views: 1439.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/components/_skill.self-ba4e0008dccd7a0259478cbb44dc79844a498256e997ebc516bf49f5d9b0a652.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/components/_all_skills.self-f0d17056d85fa16ae7d4c0555f9e7db01f1a610bc039ea1d83966340b8c9040f.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:31:13 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:31:13 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.7ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 48ms (Views: 41.1ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/api/v1/skills/4" for ::1 at 2016-06-30 09:31:22 -0700
+Processing by Api::V1::SkillsController#destroy as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mSkill Load (1.0ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (5.3ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 4]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Completed 204 No Content in 35ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:31:53 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 1729ms (Views: 1724.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/components/_all_skills.self-f0d17056d85fa16ae7d4c0555f9e7db01f1a610bc039ea1d83966340b8c9040f.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/components/_skill.self-a8b85095b15118353af14a055bd8c3e3bce4a123afc5b08ef1bf60c6fd48e1b1.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:31:55 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:31:55 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[36mSkill Load (0.9ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+Completed 200 OK in 63ms (Views: 54.0ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:32:02 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 198ms (Views: 197.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/components/_all_skills.self-f0d17056d85fa16ae7d4c0555f9e7db01f1a610bc039ea1d83966340b8c9040f.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/components/_skill.self-a8b85095b15118353af14a055bd8c3e3bce4a123afc5b08ef1bf60c6fd48e1b1.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:32:03 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:32:03 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.7ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/api/v1/skills/6" for ::1 at 2016-06-30 09:32:04 -0700
+Processing by Api::V1::SkillsController#destroy as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 6]]
+  [1m[35m (8.4ms)[0m  COMMIT
+Completed 204 No Content in 17ms (ActiveRecord: 9.1ms)
+
+
+Started DELETE "/api/v1/skills/52" for ::1 at 2016-06-30 09:32:09 -0700
+Processing by Api::V1::SkillsController#destroy as */*
+  Parameters: {"id"=>"52"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 52]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 52]]
+  [1m[35m (7.8ms)[0m  COMMIT
+Completed 204 No Content in 15ms (ActiveRecord: 8.5ms)
+
+
+Started DELETE "/api/v1/skills/51" for ::1 at 2016-06-30 09:32:10 -0700
+Processing by Api::V1::SkillsController#destroy as */*
+  Parameters: {"id"=>"51"}
+  [1m[36mSkill Load (8.0ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 51]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 51]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Completed 204 No Content in 17ms (ActiveRecord: 9.3ms)
+
+
+Started DELETE "/api/v1/skills/53" for ::1 at 2016-06-30 09:32:11 -0700
+Processing by Api::V1::SkillsController#destroy as */*
+  Parameters: {"id"=>"53"}
+  [1m[36mSkill Load (0.3ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 53]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 53]]
+  [1m[35m (8.0ms)[0m  COMMIT
+Completed 204 No Content in 15ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:32:12 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 203ms (Views: 203.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/components/_all_skills.self-f0d17056d85fa16ae7d4c0555f9e7db01f1a610bc039ea1d83966340b8c9040f.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/components/_skill.self-a8b85095b15118353af14a055bd8c3e3bce4a123afc5b08ef1bf60c6fd48e1b1.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:32:12 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:32:13 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:32:13 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[36mSkill Load (0.7ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:33:57 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 1986ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (5:2)
+  3 |     console.log('in edit')
+  4 |   }
+> 5 |   render() {
+    |   ^
+  6 |     return (
+  7 |       <div>
+  8 |         <h3>{this.props.skill.name}</h3>):
+    3: <head>
+    4:   <title>Creact</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3223501813714571587_70187342465980'
+
+
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:34:09 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1506ms (Views: 1503.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/components/_all_skills.self-ec993a4fc6e7babec62d27ded155e81b93cdfe98a779a0c5df8bf644db31b47b.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/components/_skill.self-b5442136ffccb8e3113648d8bb52015da76f2aa3ace2842ccf253926ed069654.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:34:11 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:34:11 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 32ms (Views: 24.5ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/api/v1/skills/7" for ::1 at 2016-06-30 09:34:14 -0700
+Processing by Api::V1::SkillsController#destroy as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 7]]
+  [1m[35m (8.4ms)[0m  COMMIT
+Completed 204 No Content in 19ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:34:26 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1381ms (Views: 1377.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:34:27 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/components/_skill.self-dcd64789c11b9cab832fca9a6f452cfcbaa89c8eba5c813ae52ee7fa841b10db.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/components/_all_skills.self-ec993a4fc6e7babec62d27ded155e81b93cdfe98a779a0c5df8bf644db31b47b.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:34:28 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:34:28 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+Completed 200 OK in 30ms (Views: 24.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:36:23 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1133ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (5:2)
+  3 |     return { editable: false }
+  4 |   }
+> 5 |   handleEdit(){
+    |   ^
+  6 |     this.setState({ editable: true })
+  7 |   },
+  8 |   render() {):
+    3: <head>
+    4:   <title>Creact</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3223501813714571587_70187342465980'
+
+
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:36:34 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1518ms (Views: 1514.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/components/_all_skills.self-ec993a4fc6e7babec62d27ded155e81b93cdfe98a779a0c5df8bf644db31b47b.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/components/_skill.self-be820b4c4de52136a25136703781851dddf35501f42abc104a3c8665de45b9dd.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:36:36 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:36:36 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.4ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 33ms (Views: 26.4ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/api/v1/skills/8" for ::1 at 2016-06-30 09:36:45 -0700
+Processing by Api::V1::SkillsController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mSkill Load (0.2ms)[0m  [1mSELECT  "skills".* FROM "skills" WHERE "skills"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "skills" WHERE "skills"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Completed 204 No Content in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:39:26 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1630ms (Views: 1627.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/components/_all_skills.self-ec993a4fc6e7babec62d27ded155e81b93cdfe98a779a0c5df8bf644db31b47b.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/components/_skill.self-359ee741d65fe640fa5beb192aa32d21439b170adc017b21aa4ecfca4c0cd8a8.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:39:28 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:39:29 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[36mSkill Load (0.7ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+Completed 200 OK in 37ms (Views: 24.7ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:44:16 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1637ms (Views: 1634.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/components/_all_skills.self-ec993a4fc6e7babec62d27ded155e81b93cdfe98a779a0c5df8bf644db31b47b.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/components/_skill.self-0ab4626f8738d72b74f9eba7f1df7e8c8c2ca8f6fda808706b73044922dbf310.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:44:18 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:44:18 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 34ms (Views: 27.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:46:41 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1667ms (Views: 1664.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/components/_all_skills.self-ec993a4fc6e7babec62d27ded155e81b93cdfe98a779a0c5df8bf644db31b47b.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/components/_body.self-aca1ed69cf67cc9c983d3ccd4de62ab40c88f918af01bc9b2618c01387027ff1.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/components/_skill.self-b4f7f2640347176e4e28d983411d65c0d56428ef7ad4b293d6b81e02b1ee9c20.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:46:43 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:46:44 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT "skills".* FROM "skills"[0m
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:51:03 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 1195ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (5:2)
+  3 |     this.props.handleUpdate(skill);
+  4 |   }
+> 5 |   render() {
+    |   ^
+  6 |     var skills = this.props.skills.map((skill) => {
+  7 |       return (
+  8 |         <div key={skill.id}>):
+    3: <head>
+    4:   <title>Creact</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3223501813714571587_70187342465980'
+
+
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:51:25 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 895ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (5:2)
+  3 |     this.props.handleUpdate(skill);
+  4 |   }
+> 5 |   render() {
+    |   ^
+  6 |     var skills = this.props.skills.map((skill) => {
+  7 |       return (
+  8 |         <div key={skill.id}>):
+    3: <head>
+    4:   <title>Creact</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3223501813714571587_70187342465980'
+
+
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/adrienne/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-30 09:51:36 -0700
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2297ms (Views: 2294.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3648e527980e6bffaba6cdaffa3c11b29384e096de8ae48c3bcf6b29c3359c1a.css?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react.self-5affcdd29d08b7bd0cb3e76750e03d51b83911b6cd114fdd3cfea2726d5d110c.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react_ujs_mount.self-0bbef2f153b5bc335de68fb55156e53804710334800eb169bf983c87b3a13135.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks.self-19cb50a828b179c80e0ef6463ceb612ae3e75f377fb2dd6f4afdc3b46ae75d56.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic.self-763df8fa4c0b0551840f5244b265843641523ad3bf7bb308d20801ac5cde2acb.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react_ujs_turbolinks_classic_deprecated.self-f93fc4217cec084020eaf90b0425c454ba18d4ee1a054f254f5dba461eaab1a4.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react_ujs_pjax.self-e8fc58103934b6c8054d5fbfe37ec92f2ef7719bc90566026fe9fe19e0e2cf45.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react_ujs_native.self-69da92af440ae3f522e7294876ed2bae234447ee564d1619c9f69d53e1020a8a.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react_ujs_event_setup.self-0cd254aea0ec32dd175eff42a443f912c283295c0235384ae7cd425cd8f7c3e5.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/react_ujs.self-538d6440534fa5f615e8a26932792a82a2e4a33a97886e2d815eab8fc216d415.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/components/_all_skills.self-7e0602b98e9a490c893234c0f919ab40f4467737f3a56a49c147b0ca95125f80.js?body=1" for ::1 at 2016-06-30 09:51:38 -0700
+
+
+Started GET "/assets/components/_body.self-422a8660b0c84c84b2e1b0b4bf395e47b4008f7da03dd727d658a5ab3343cf11.js?body=1" for ::1 at 2016-06-30 09:51:39 -0700
+
+
+Started GET "/assets/components/_header.self-ca0e4312c6584d61b85116ba8e2c9c4330f158cf8a20255a2b632a608499f333.js?body=1" for ::1 at 2016-06-30 09:51:39 -0700
+
+
+Started GET "/assets/components/_main.self-f8b77635cea2e070278b9079348f5e45e45344900b093dc827c90770eefebf8d.js?body=1" for ::1 at 2016-06-30 09:51:39 -0700
+
+
+Started GET "/assets/components/_new_skill.self-1cb09f6fb41c9619ef0db133745f7ce822c37362219533e0a64857f9ae1108cc.js?body=1" for ::1 at 2016-06-30 09:51:39 -0700
+
+
+Started GET "/assets/components/_skill.self-b4f7f2640347176e4e28d983411d65c0d56428ef7ad4b293d6b81e02b1ee9c20.js?body=1" for ::1 at 2016-06-30 09:51:39 -0700
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2016-06-30 09:51:39 -0700
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-06-30 09:51:39 -0700
+
+
+Started GET "/api/v1/skills.json" for ::1 at 2016-06-30 09:51:39 -0700
+Processing by Api::V1::SkillsController#index as JSON
+  [1m[35mSkill Load (0.5ms)[0m  SELECT "skills".* FROM "skills"
+Completed 200 OK in 24ms (Views: 18.7ms | ActiveRecord: 2.2ms)
